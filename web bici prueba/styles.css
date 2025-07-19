@@ -1,0 +1,71 @@
+/* styles.css */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: url('https://images.unsplash.com/photo-1604748954134-457791b2ce9b?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bXRifGVufDB8fDB8fHww') no-repeat center center fixed;
+  background-size: cover;
+  color: #2e2e2e;
+  line-height: 1.6;
+  padding: 2rem;
+}
+header {
+  background: rgba(75, 95, 65, 0.85);
+  color: #f0f0e8;
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+header p { font-size: 1.1rem; }
+.intro { padding: 2rem; text-align: center; background: rgba(75, 95, 65, 0.7); margin-bottom: 2rem; }
+.intro h2 { font-size: 1.8rem; margin-bottom: 0.5rem; color: #b3c39c; }
+.listado { display: flex; flex-direction: column; gap: 3rem; }
+.card {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.93);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  animation: fadeInUp 0.6s ease both;
+}
+.card img {
+  width: 100%;
+  height: 1000px;
+  object-fit: cover;
+}
+.card .info { padding: 2rem; }
+.card h3 {
+  margin-bottom: 1rem;
+  color: #354b30;
+  font-size: 1.5rem;
+}
+.purchase-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: #6b8455;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+.purchase-button:hover { background: #4f653f; }
+footer {
+  background: rgba(75, 95, 65, 0.85);
+  color: #f0f0e8;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 600px) {
+  body { padding: 1rem; }
+  header h1 { font-size: 2rem; }
+  .intro h2 { font-size: 1.5rem; }
+  .card .info { padding: 1rem; }
+}
